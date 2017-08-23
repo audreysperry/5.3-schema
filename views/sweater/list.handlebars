@@ -1,0 +1,30 @@
+<h2>Sweater Collection</h2>
+
+
+<div class="well">
+  <form class="" action="/sweater/" method="post">
+    <input type="text" name="name" placeholder="Sweater Name">
+    <input type="number" name="pockets" placeholder="Number of Pockets">
+    <input type="text" name="materialPrimary" placeholder="Primary Material">
+    <input type="text" name="materialSecondary" placeholder="Secondary Material">
+    <div class="checkbox">
+      <label><input type="checkbox" name="color" value="red">Red</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="color" value="blue">Blue</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="green" name="color" >Green</label>
+    </div>
+    <input class="btn btn-primary" type="submit" name="" value="Add Sweater">
+
+  </form>
+</div>
+
+
+<ul>
+  {{#each sweaters}}
+    <li>{{name}} {{pockets}} {{materials.primary}} {{materials.secondary}}
+      {{colors}}<a class="btn btn-danger" href="/sweater/{{_id}}/delete">Delete Sweater from Collection</a> <a class="btn btn-info" href="/sweater/{{_id}}/update">Update Sweater</a></li>
+  {{/each}}
+</ul>
