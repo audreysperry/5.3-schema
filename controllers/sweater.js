@@ -74,8 +74,8 @@ let SweaterController = {
       },
         $addToSet: {
           colors: colors
-        }
-  
+      }
+
     }).then(function(result) {
       res.redirect('/sweater');
     });
