@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 const router = require('./routes');
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/sweaterdb')
+var database = process.env.MONGODB_URI || 'mongodb://localhost:27017/sweaterdb';
+mongoose.connect(database);
 
 
 app.engine('handlebars', handlebars({defaultLayout: 'base'}));
