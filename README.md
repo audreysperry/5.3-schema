@@ -9,6 +9,6 @@ At least one nested object (can be in array)
 Using your schema, build an Express app that lets you view your collection, add to your collection, edit items in your collection, and delete items from your collection.
 
 
-##Deployed Demo Link
+## Deployed Demo Link
 
 Project hosted on heroku here: [View Project](https://sweater-collection.herokuapp.com/sweater)
