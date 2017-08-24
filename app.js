@@ -13,6 +13,8 @@ mongoose.connect('mongodb://localhost:27017/sweaterdb')
 app.engine('handlebars', handlebars({defaultLayout: 'base'}));
 app.set('view engine', 'handlebars');
 
+app.use('/static', express.static('public'));
+
 
 app.use(bodyParser.urlencoded({extended: false}));
 

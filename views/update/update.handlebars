@@ -1,5 +1,6 @@
 <div class="well">
-  <form class="" action="/sweater/update" method="post">
+  <form class="d-flex flex-column justify-content-center sweater-form" action="/sweater/update" method="post">
+    <h2>Update your Sweater Information</h2>
     <input type="hidden" name="id" value="{{_id}}">
     <input type="text" name="name" value="{{name}}">
     <input type="number" name="pockets" value="{{pockets}}">
@@ -13,6 +14,24 @@
     </div>
     <div class="checkbox">
       <label><input type="checkbox" value="green" name="color" >Green</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="color" value="Yellow">Yellow</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="color" value="Purple">Purple</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="color" value="Black">Black</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="color" value="White">White</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="color" value="Cream">Cream</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="color" value="Orange">Orange</label>
     </div>
     <input class="btn btn-primary" type="submit" name="" value="Update Sweater">
 

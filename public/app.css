@@ -1,0 +1,20 @@
+.sweater-form {
+  padding: 50px 300px;
+  margin: - auto;
+
+}
+
+.sweater-form input {
+  margin: 5px;
+}
+.sweater-list {
+  list-style: none;
+}
+
+.sweater-list li {
+  padding: 5px;
+}
+
+.sweater-name {
+  font-weight: bold;
+}
